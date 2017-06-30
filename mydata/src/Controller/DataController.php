@@ -21,9 +21,9 @@ class DataController extends ControllerBase
         if ( !empty($findAllData) ) {
             foreach ($findAllData as $v) {
                 array_push($data, [
-                    'id'           => $v->id,
-                    'name'         => $v->name,
-                    'email'        => $v->email
+                    'id'    => $v->id,
+                    'name'  => $v->name,
+                    'email' => $v->email
                 ]);
             }
         }
