@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function mydata_theme($existing, $type, $theme, $path) {
+    return [
+        'data' => [
+            'variables' => [
+                'title' => 'Default Title',
+                'data'   => NULL
+            ],
+            'template' => 'data'
+        ]
+    ];
+}
