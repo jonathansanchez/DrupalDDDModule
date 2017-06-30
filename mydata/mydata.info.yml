@@ -1,0 +1,7 @@
+name: My Data
+description: Testing module
+package: Custom
+version: 8.x.1
+
+type: module
+core: 8.x
