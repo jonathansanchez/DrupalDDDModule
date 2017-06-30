@@ -12,6 +12,15 @@ namespace Drupal\mydata\Domain\Repository;
 interface DataRepository
 {
     /**
+     * Save data
+     *
+     * @param array $data
+     *
+     * @return bool true|null
+     */
+    public function save(array $data);
+
+    /**
      * Return all data
      *
      * @param none
