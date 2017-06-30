@@ -1,0 +1,7 @@
+services:
+  mydata.drupaldatarepository:
+    class: Drupal\mydata\Infrastructure\Database\DrupalDataRepository
+    arguments: ['@database']
+  mydata.findalldata:
+    class: Drupal\mydata\Domain\Services\FindAllData
+    arguments: ['@mydata.drupaldatarepository']
