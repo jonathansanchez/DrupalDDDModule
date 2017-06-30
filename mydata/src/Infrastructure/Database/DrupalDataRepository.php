@@ -14,6 +14,22 @@ class DrupalDataRepository implements DataRepository
         $this->database = $database;
     }
 
+    public function save(array $data)
+    {
+        $this
+            ->database
+            ->insert('data')
+            ->fields([
+                'name',
+                'email'
+            ])
+            ->values([
+                $data['name'],
+                $data['email']
+            ])
+            ->execute();
+    }
+
     public function all()
     {
         return $this
