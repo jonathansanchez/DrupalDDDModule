@@ -23,5 +23,6 @@
     ],
     'primary key' => ['id'],
   ];
-  return data;
+  
+  return $schema;
 }
