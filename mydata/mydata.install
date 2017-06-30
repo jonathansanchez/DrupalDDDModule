@@ -19,7 +19,8 @@
         'type' => 'varchar',
         'length' => 255,
         'not null' => TRUE,
-      ],
+      ]
+    ],
     'primary key' => ['id'],
   ];
   return data;
