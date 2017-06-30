@@ -5,3 +5,11 @@ mydata.content:
     _title: 'My Data'
   requirements:
     _permission: 'access content'
+
+mydata.createdata:
+  path: '/create-data'
+  defaults:
+    _form: '\Drupal\mydata\Form\CreateData'
+    _title: 'Save Data'
+  requirements:
+    _access: 'TRUE'
