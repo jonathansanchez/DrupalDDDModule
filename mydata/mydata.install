@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * implements hook_schema()
+ */
+ function mydata_schema() {
+  $schema['data'] = [
+    'fields' => [
+      'id'=> [
+        'type'=>'serial',
+        'not null' => TRUE,
+      ],
+      'name'=> [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+      'email'=> [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+    'primary key' => ['id'],
+  ];
+  return data;
+}
