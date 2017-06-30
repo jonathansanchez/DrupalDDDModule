@@ -1,0 +1,7 @@
+mydata.content:
+  path: '/data'
+  defaults:
+    _controller: '\Drupal\mydata\Controller\DataController::content'
+    _title: 'My Data'
+  requirements:
+    _permission: 'access content'
